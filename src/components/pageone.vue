@@ -1,20 +1,22 @@
 <template>
+<div style="display:flex;flex-direction: column;align-items: center;">
+  <h3>关于技能</h3>
+
   <div class="skill">
     <div>
       <h3>html/css</h3>
-      <p>精通 HTML5+CSS3 布局、并能够结合 web 标准,精准还原设计图。</p>
-      <p>精通flex布局,并能使用flex布局完成各种复杂页面的设计</p>
+      <p>熟练掌握HTML/CSS，熟练使用flex布局，了解grid布局，了解HTML/CSS语义化标签及动画效果等，设计稿还原度98%;</p>
+      <p>熟练使用Element-UI框架，了解BootStrap实现原理</p>
       <p>
-        熟练使用常见的css框架,如element-ui,bootstrap熟练使用css预处理器:less,sass
+        熟练使用CSS预处理器:less、sass
       </p>
     </div>
     <div>
       <h3>javascript/typescript</h3>
-      <p>精通原生 JavaScript,熟练掌握DOM、BOM 操作</p>
-      <p>熟悉强类型语言typescript,并能使用vue3+typescript开发项目</p>
-      <p>熟悉es6新增语法如let,const,箭头函数等</p>
-      <p>熟练使用axios进行前后端交互</p>
-      <p>了解过jquery的基本使用</p>
+      <p>熟悉TypeScript强类型语言</p>
+      <p>熟悉ES6语法，了解异步编程的三种方式</p>
+      <p>熟练使用axios进行前后端交互，了解get请求和post请求的不同</p>
+      <p>了解JQuery的基本使用</p>
     </div>
     <div>
       <h3>Vue2/Vue3框架</h3>
@@ -22,15 +24,15 @@
       <p>熟练使用Vue状态管理工具Vuex</p>
       <p>熟练使用Vue全家桶:vue-cli,vueRouter,Vuex,Axios搭建项目</p>
       <p>对Vue的核心思想响应式原理,组件系统有深刻的理解</p>
-      <p>能熟练使用Vue2和Vue3进行项目的开发</p>
+      <p>了解Vue2和Vue3区别</p>
     </div>
     <div>
       <h3>微信小程序,跨平台框架uniapp</h3>
       <p>熟练使用微信开发者工具</p>
-      <p>深刻理解小程序页面和组件的概念,并能快速搭建小程序界面</p>
-      <p>熟练使用小程序自带的各种组件以及Api</p>
-      <p>对小程序的常见配置比较了解</p>
+      <p>熟练使用小程序自带的组件及api</p>
+      <p>熟练使用uniapp跨平台框架开发项目</p>
     </div>
+  </div>
   </div>
 </template>
 <style lang="less" scoped>

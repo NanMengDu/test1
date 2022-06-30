@@ -4,28 +4,33 @@
     <h3>关于项目</h3>
     <div class="item">
       <div>
-        <h4>特价商城</h4>
+        <h4>选购商城</h4>
         <p>
-          特价商城是一款商城类的应用,主要有首页,精选,购物车,我的四个模块,如今性价比成了购物的非常重要的因素,特价商城的宗旨就是为客户提供物美价廉的商品.
+          选购商城是一款商城类的应用,进行本地存储封localStorage的封装，项目的搭建，对各个页面进行布局处理，通过VueRouter实现页面跳转，利用Vuex进行全局状态管理等
         </p>
-        <h5>技术栈:Vue2+uniapp+Vuex</h5>
+        <h5>技术栈:Vue2 Vuex VueRouter axios ElementUI</h5>
       </div>
       <div>
-        <h4>后台管理系统</h4>
+        <h4>货行后台管理系统</h4>
         <p>
-          对公司产品及订单进行展示处理,主要包含登录、注册、退出、订单等模块，
+          对公司产品及订单进行展示处理,项目中利用封装localStorage实现本地存储功能，采用分装axios请求，
+          调取接口数据，通过Vuex全局状态管理特性实现侧边栏的显示隐藏，实现面包屑导航功能，
+          通过VueRouter实现各个页面的跳转，利用ElementUI组件优化页面样式，借用echarts图表库绘制销量，库存图等
         </p>
-        <h5>技术栈:Vue2+element-ui+axios+Vuex</h5>
+        <h5>技术栈:Vue2 Vuex VueRouter axios ElementUI echarts</h5>
       </div>
       <div>
-        <h4>音乐商城</h4>
-        <p>一款小程序项目,主要包含首页、视频、我的模块</p>
-        <h5>技术栈:小程序api,小程序组件</h5>
+        <h4>晴美微商城小程序</h4>
+        <p>项目中利用到小程序组件swiper本地存储set/getStorage判断是否需要登录，
+          采用promise结合async/await封装利用request请求接口，利用navigateTo完成页面跳转，
+          利用scroll-view组件实现可滚动视图区域，利用单选功能实现分类列表。</p>
+        <h5>技术栈:微信开发者工具 小程序api组件等</h5>
       </div>
       <div>
-        <h4>游戏页面</h4>
-        <p></p>
-        <h5>技术栈:Vue3+element-ui+axios</h5>
+        <h4>船货行小程序</h4>
+        <p>项目中利用到小程序组件swiper本地存储set/getStorage判断是否需要登录，
+          采用promise结合async/await封装利用request请求，利用navigateTo完成页面跳转。</p>
+        <h5>技术栈:微信开发者工具 小程序api组件等</h5>
       </div>
     </div>
   </div>
@@ -53,7 +58,7 @@
     flex-direction: column;
     line-height: 25px;
     padding: 10px;
-    height: 180px;
+    // height: 190px;
     padding: 15px;
     // 渐变色
     background-image: linear-gradient(135deg, blue, purple, blue);
