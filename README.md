@@ -26,3 +26,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
 我是默认main文件
+test
