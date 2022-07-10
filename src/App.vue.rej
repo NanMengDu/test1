@@ -1,0 +1,10 @@
+diff a/src/App.vue b/src/App.vue	(rejected hunks)
+@@ -6,7 +6,7 @@
+ </template>
+ <script>
+ export default {
+-  // main111
++  // main主分支
+   data(){
+     return{}
+   }
