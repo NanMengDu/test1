@@ -14,5 +14,9 @@ export default new VueRouter({
                 {path:'/contact',component:()=>import('./components/contact')}
             ]
         }
+        // {
+        //     path:'/test',
+        //     component:()=>import('./components/hightchart')
+        // }
     ]
 })
