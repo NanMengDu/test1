@@ -13,10 +13,10 @@ export default new VueRouter({
                 {path:'/hobby',component:()=>import('./components/hobby')},
                 {path:'/contact',component:()=>import('./components/contact')}
             ]
+        },
+        {
+            path:'/test',
+            component:()=>import('./components/mytab')
         }
-        // {
-        //     path:'/test',
-        //     component:()=>import('./components/hightchart')
-        // }
     ]
 })
