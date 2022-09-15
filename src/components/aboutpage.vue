@@ -42,24 +42,24 @@
   width: 100%;
   h3 {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: .5208vw;
   }
 }
 .item {
   display: grid;
   grid-template-columns: repeat(2, 24vw);
-  margin: 30px;
-  gap: 30px;
+  margin: 1.5625vw;
+  gap: 1.5625vw;
   div {
-    border-radius: 50px;
+    border-radius: 2.6042vw;
     background: #e3f4f9;
     box-shadow: 20px 20px 60px #117296, -20px -20px 60px #fdfafa;
     display: flex;
     flex-direction: column;
-    line-height: 25px;
-    padding: 10px;
+    line-height: 1.3021vw;
+    padding: .5208vw;
     // height: 190px;
-    padding: 15px;
+    padding: .7813vw;
     // 渐变色
     background-image: linear-gradient(135deg, blue, purple, blue);
     background-clip: text;

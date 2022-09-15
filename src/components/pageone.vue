@@ -38,26 +38,29 @@
 <style lang="less" scoped>
 .skill {
   display: grid;
-  grid-template-columns: repeat(2, 24vw);
+  grid-template-columns: repeat(2, 28vw);
   // grid-template-rows: repeat(2,40vh);
-  margin: 30px;
-  gap: 30px;
+  margin: 1.5625vw;
+  gap: 1.5625vw;
   div {
-    border-radius: 20px;
+    border-radius: 1.0417vw;
     background: #e3f4f9;
-    box-shadow: 20px 20px 60px #c1cfd4, -20px -20px 60px #ffffff;
+    box-shadow: 1.0417vw 1.0417vw 3.125vw #c1cfd4, -1.0417vw -1.0417vw 3.125vw #ffffff;
     display: flex;
     flex-direction: column;
-    line-height: 25px;
-    padding: 10px;
+    line-height: 1.3021vw;
+    padding: .5208vw;
     // 渐变色
     background-image: linear-gradient(135deg, blue, purple,blue);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    h3{
+      font-size: 2.0833vw;
+    }
     P {
       flex: 1;
-      
+      font-size: .8333vw;
     }
   }
 }
