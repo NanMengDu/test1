@@ -1,7 +1,7 @@
 <template>
 <!-- 头像 -->
   <div class="aboutme">
-    <img :src="url" style="width: 260px; height: 260px; border-radius: 50%" />
+    <img :src="url" style="width: 13.5417vw; height: 13.5417vw; border-radius: 50%" />
     <div class="Quotations">
       <p>多数人在人潮汹涌的世间，白白挤了一生，从来不知</p>
       <p>道哪里才是他所想要到达的地方，而有目标的人却始</p>
@@ -36,7 +36,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 150px;
+  height: 7.8125vw;
   font-weight: 700;
   background-image: linear-gradient(135deg, rgb(29, 10, 242), rgb(237, 27, 237), rgb(46, 222, 11));
   background-clip: text;

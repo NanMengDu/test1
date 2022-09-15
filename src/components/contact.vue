@@ -27,10 +27,10 @@
 <style lang="less" scoped>
 .contact {
   display: grid;
-  grid-template-columns: repeat(2, 250px);
+  grid-template-columns: repeat(2, 13.0208vw);
   place-items: center;
   h3 {
-    font-size: 34px;
+    font-size: 2.125rem;
     background-image: linear-gradient(135deg, blue, purple,blue);
     background-clip: text;
     -webkit-background-clip: text;
@@ -42,11 +42,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 200px;
-  height: 150px;
-  border-radius: 50px;
+  width: 10.4167vw;
+  height: 7.8125vw;
+  border-radius: 2.6042vw;
   background: #fdfafa;
-  box-shadow: 20px 20px 60px #eedddd, -20px -20px 60px #ffffff;
+  box-shadow: 1.0417vw 1.0417vw 3.125vw #eedddd, -1.0417vw -1.0417vw 3.125vw #ffffff;
   color: rgb(247, 0, 255);
 }
 </style>

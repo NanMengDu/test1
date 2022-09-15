@@ -4,7 +4,7 @@
         <!-- 图片区域 -->
         <div class="portrait" @click="def" :class="{select:selectindex==null}">
           <img
-            style="width: 80px; height: 80px; border-radius: 50px"
+            style="width: 4.1667vw; height: 4.1667vw; border-radius: 2.6042vw"
             :src="url"
           />
           <div class="name">{{ name }}</div>
@@ -85,18 +85,18 @@ export default {
     align-items: center;
     width: 25vw;
     background-color: #dff0f5;
-    padding: 5px 0;
-    border-radius: 10px 0 0 10px;
+    padding: .2604vw 0;
+    border-radius: .5208vw 0 0 .5208vw;
   }
   .list{
     flex: 1;
     color: rgba(79, 79, 201, 0.89);
     // font-size: 18px;
     font-weight: 700;
-    margin: 5px 0;
+    margin: .2604vw 0;
   }
   .select{
-    border-radius: 20px;
+    border-radius: 1.0417vw;
     background-color: #7bddfa;
     color: rgb(239, 5, 145);
   }
@@ -108,50 +108,50 @@ export default {
   height: 20vh;
   align-items: center;
   flex-direction: column;
-  padding: 5px;
+  padding: .2604vw;
   background-color: #dff0f5;
   transition: all 0.5s;
   border-radius: 5px;
   color: rgba(79, 79, 201, 0.89);
     font-weight: 700;
   .name {
-    margin-top: 5px;
+    margin-top: .2604vw;
   }
 }
 .portrait:hover{
   background-color: white;
   transition: all 0.3s;
-  border-radius: 20px;
+  border-radius: 1.0417vw;
   color: rgb(239, 5, 145);
   cursor: pointer;
 }
 .list {
   width: 23vw;
-  padding: 5px;
+  padding: .2604vw;
   background-color: #dff0f5;
   transition: all 0.5s;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
+  border-radius: .2604vw;
   i {
-    margin-right: 10px;
+    margin-right: .5208vw;
   }
 }
 .list:hover {
   transition: all 0.3s;
-  border-radius: 20px;
+  border-radius: 1.0417vw;
   background-color: white;
   color: rgb(239, 5, 145);
   cursor: pointer;
 }
 .right {
-  padding: 10px;
+  padding: .5208vw;
   // border: 1px solid;
   width: 55vw;
   background-color: #d3f5ff;
   display: flex;
   justify-content: center;
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 .5208vw .5208vw 0;
 }
 </style>

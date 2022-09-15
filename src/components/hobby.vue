@@ -51,10 +51,10 @@ export default {
 }
   .swiper-container {
     /* border: 1px solid; */
-    width: 600px;
-    height: 400px;
-    border-radius: 10px;
-    margin-top: 30px;
+    width: 31.25vw;
+    height: 20.8333vw;
+    border-radius: .5208vw;
+    margin-top: 1.5625vw;
 }  
 /* 使轮播图片居中 */
 .swiper-slide{
