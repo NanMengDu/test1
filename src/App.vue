@@ -1,6 +1,6 @@
 <template>
   <div class="backimg">
-    <h1>杜梦男个人简介</h1>
+    <h1>杜梦男个人简介啊</h1>
     <router-view></router-view>
   </div>
 </template>
