@@ -29,14 +29,16 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  
 }
 // 格言
 .Quotations {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 7.8125vw;
+  min-height: 150px;
+  font-size: .9375vw;
   font-weight: 700;
   background-image: linear-gradient(135deg, rgb(29, 10, 242), rgb(237, 27, 237), rgb(46, 222, 11));
   background-clip: text;

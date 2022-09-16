@@ -1,28 +1,31 @@
 <template>
   <div class="backimg">
-      <h1>杜梦男个人简介</h1>
-      <div class="time">我们相遇的时间: <span>{{nowTime}}</span></div>
+    <div class="dis">
+      <div class="time">
+        You are trapped in my world at <span>{{ nowTime }}</span>
+      </div>
+    </div>
     <router-view></router-view>
   </div>
 </template>
 <script>
-import moment from 'moment'
+import moment from "moment";
 export default {
-  data(){
-    return{
-      nowTime:''
-    }
+  data() {
+    return {
+      nowTime: "",
+    };
   },
-  methods:{
-    showTime(){
-      setInterval(()=>{
-        this.nowTime = moment().format('yyyy-MM-DD HH:mm:ss')
-      },1000)
-    }
+  methods: {
+    showTime() {
+      setInterval(() => {
+        this.nowTime = moment().format("yyyy-MM-DD HH:mm:ss");
+      }, 1000);
+    },
   },
-  created(){
-    this.showTime()
-  }
+  created() {
+    this.showTime();
+  },
 };
 </script>
 <style lang='less' scoped>
@@ -33,21 +36,21 @@ export default {
   width: 100vw;
   height: 100vh;
 }
-.time{
-  position: fixed;
-  right: 100px;
-  top: 30px;
-  color: rgb(20, 248, 31);
-  font-family: 'Courier New', Courier, monospace;
-  span{
-    font-size: 1.25rem;
-    color: rgb(238, 255, 0);
-  }
-}
-h1 {
-  color: #c8e3f4;
-  text-align: center;
+.dis {
   height: 4.1667vw;
-  line-height: 6.7708vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .time {
+    font-size: 1.5625vw;
+    font-weight: 700;
+    color: rgb(5, 248, 13);
+    font-family: "Courier New", Courier, monospace;
+    span {
+      font-size: 1.0417vw;
+      font-weight: 700;
+      color: rgb(238, 255, 0);
+    }
+  }
 }
 </style>

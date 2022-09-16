@@ -8,7 +8,7 @@
             :src="url"
           />
           <div class="name">{{ name }}</div>
-          <div class="name">Awaken the giant within</div>
+          <div class="name" title="唤醒心中的巨人">Awaken the giant within</div>
         </div>
         <!-- 列表 -->
         <div class="list" :class="{select:selectindex==index}" v-for="(item,index) in list" @click="foo(index)">
@@ -77,9 +77,10 @@ export default {
   width: 80vw;
   height: 80vh;
   // border: 1px solid;
-  margin: 5vh 10vw 10vh;
+  margin: 0 10vw 10vh;
   display: flex;
   .left {
+    font-size: 1.3021vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,6 +108,8 @@ export default {
   width: 23vw;
   height: 20vh;
   align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
   flex-direction: column;
   padding: .2604vw;
   background-color: #dff0f5;

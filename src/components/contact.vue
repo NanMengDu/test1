@@ -14,8 +14,8 @@
     </div>
     <div>
       <i class="t-icon t-icon-wodeyouxiang"></i>
-      <div>邮箱</div>
-      <div>2464016555@qq.com</div>
+      <div> QQ </div>
+      <div>2464016555</div>
     </div>
     <div>
       <i class="t-icon t-icon-dingwei"></i>
@@ -28,9 +28,10 @@
 .contact {
   display: grid;
   grid-template-columns: repeat(2, 13.0208vw);
+  gap: 30px;
   place-items: center;
   h3 {
-    font-size: 2.125rem;
+    font-size: 1.7708vw;
     background-image: linear-gradient(135deg, blue, purple,blue);
     background-clip: text;
     -webkit-background-clip: text;
@@ -41,12 +42,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 10.4167vw;
-  height: 7.8125vw;
+  justify-content: space-evenly;
+  width: 14.4167vw;
+  height: 10.8125vw;
   border-radius: 2.6042vw;
   background: #fdfafa;
-  box-shadow: 1.0417vw 1.0417vw 3.125vw #eedddd, -1.0417vw -1.0417vw 3.125vw #ffffff;
+  box-shadow: 20px 20px 60px#eedddd, -20px -20px 60px #ffffff;
   color: rgb(247, 0, 255);
+  div{
+    font-size: .8333vw;
+  }
 }
 </style>
