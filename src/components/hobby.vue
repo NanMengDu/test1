@@ -20,7 +20,7 @@
           <div class="transition-box">
            <!-- <div style="color:black">留什么给你</div>  -->
             <audio class="adio" controls>
-            <source src="../audio/lsmgn.mp3" type="audio/ogg">
+            <source src="../audio/lsmgn.mp3" type="audio/mpeg">
             </audio>
             <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" src="//music.163.com/outchain/player?type=2&id=145455&auto=1&height=66"></iframe>
           </div>
