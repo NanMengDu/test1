@@ -30,7 +30,6 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  
 }
 // 格言
 .Quotations {
@@ -47,5 +46,15 @@ export default {
   p {
     flex: 1;
   }
+}
+@media screen and (max-width:385px){
+  .aboutme {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 }
 </style>

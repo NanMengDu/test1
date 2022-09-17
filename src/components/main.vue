@@ -32,10 +32,10 @@ export default {
       url: require("../img/baby.jpg"),
       name: "杜梦男",
       list: [
-        { icon: 't-icon t-icon-zhuanyejineng--', title: "技能" },
-        { icon: 't-icon t-icon-guanyu', title: "关于" },
+        { icon: 't-icon t-icon-zhuanyejineng--', title: "娱乐圈" },
+        { icon: 't-icon t-icon-guanyu', title: "关于我" },
         { icon: 't-icon t-icon-xingquaihao', title: "爱好" },
-        { icon: 't-icon t-icon-lianxiwomen', title: "联系" },
+        { icon: 't-icon t-icon-lianxiwomen', title: "商务联系" },
       ],
     };
   },
@@ -150,7 +150,6 @@ export default {
 }
 .right {
   padding: .5208vw;
-  // border: 1px solid;
   width: 55vw;
   background-color: #d3f5ff;
   display: flex;

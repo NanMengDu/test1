@@ -53,4 +53,16 @@ export default {
     }
   }
 }
+@media screen and (max-width:385px){
+  .dis{
+    margin-top: 40px;
+    .time{
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+      justify-content: center;
+    }
+  }
+}
 </style>

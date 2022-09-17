@@ -53,4 +53,21 @@
     font-size: .8333vw;
   }
 }
+@media screen and (max-width:385px){
+  .contact > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 20.4167vw;
+  height: 19.8125vw;
+  border-radius: 2.6042vw;
+  background: #fdfafa;
+  box-shadow: 20px 20px 60px#eedddd, -20px -20px 60px #ffffff;
+  color: rgb(247, 0, 255);
+  div{
+    font-size: .8333vw;
+  }
+}
+}
 </style>
