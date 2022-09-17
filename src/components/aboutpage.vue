@@ -103,7 +103,7 @@
   margin-top: 5px;
   gap: 10px;
 }
-@media screen and (max-width:385px){
+@media screen and (max-width:500px){
   ::v-deep .el-descriptions .is-bordered .el-descriptions-item__cell{
     padding: 0;
   }

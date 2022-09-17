@@ -193,7 +193,7 @@ export default {
   text-overflow: ellipsis;
 }
 
-@media screen and (max-width: 385px){
+@media screen and (max-width: 500px){
   .card {
   width: 100%;
   padding: .5208vw;

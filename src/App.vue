@@ -53,7 +53,7 @@ export default {
     }
   }
 }
-@media screen and (max-width:385px){
+@media screen and (max-width:500px){
   .dis{
     margin-top: 40px;
     .time{

@@ -47,7 +47,7 @@ export default {
     flex: 1;
   }
 }
-@media screen and (max-width:385px){
+@media screen and (max-width:500px){
   .aboutme {
   height: 100%;
   width: 60%;

@@ -53,7 +53,7 @@
     font-size: .8333vw;
   }
 }
-@media screen and (max-width:385px){
+@media screen and (max-width:500px){
   .contact > div {
   display: flex;
   flex-direction: column;

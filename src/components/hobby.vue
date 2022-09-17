@@ -106,7 +106,7 @@ export default {
     }
   }
   
-@media screen and (max-width: 385px) {
+@media screen and (max-width: 500px) {
   .swiper-pagination,
   .swiper-button-prev,
   .swiper-button-next {
