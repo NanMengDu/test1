@@ -1,16 +1,13 @@
 <template>
   <div class="backimg">
-    <router-view>
-    </router-view>
+    <router-view> </router-view>
   </div>
 </template>
 <script>
 // import './js/click-hw'
-import './js/click'
-import './js/animation'
-export default {
-  
-}
+import "./js/click";
+import "./js/animation";
+export default {};
 </script>
 <style lang='less' scoped>
 // 去除页面滚动条
@@ -24,9 +21,9 @@ export default {
   width: 100vw;
   height: 100vh;
   // 外边框塌陷
-  &::before{
+  &::before {
     display: block;
-    content: '';
+    content: "";
     overflow: hidden;
     visibility: visible;
   }
