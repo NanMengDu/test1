@@ -11,7 +11,7 @@
           <div class="name" title="唤醒心中的巨人">Awaken the giant within</div>
         </div>
         <!-- 列表 -->
-        <div class="list" :class="{select:selectindex==index}" v-for="(item,index) in list" @click="foo(index)">
+        <div class="list" :class="{select:selectindex==index}" v-for="(item,index) in list" @click="foo(index,item.name)">
           <i :class="item.icon"></i>
           <span>{{ item.title }}</span>
         </div>
@@ -32,10 +32,10 @@ export default {
       url: require("../img/baby.jpg"),
       name: "杜梦男",
       list: [
-        { icon: 't-icon t-icon-zhuanyejineng--', title: "娱乐圈" },
-        { icon: 't-icon t-icon-guanyu', title: "关于我" },
-        { icon: 't-icon t-icon-xingquaihao', title: "爱好" },
-        { icon: 't-icon t-icon-lianxiwomen', title: "商务联系" },
+        { icon: 't-icon t-icon-zhuanyejineng--', title: "娱乐圈",name:'pageone' },
+        { icon: 't-icon t-icon-guanyu', title: "关于我",name:'aboutpage' },
+        { icon: 't-icon t-icon-xingquaihao', title: "爱好",name:'hobby' },
+        { icon: 't-icon t-icon-lianxiwomen', title: "商务联系",name:'contact' },
       ],
     };
   },
@@ -46,18 +46,14 @@ export default {
       this.selectindex = null
     },
     // 跳转页面
-    foo(index){
-      // console.log(index);
+    foo(index,name){
       this.selectindex = index
       localStorage.setItem('selectindex',index)
+      // 路由跳转
       if(index == 0){
         this.$router.push({path:'/pageone'})
-      }else if(index == 1){
-        this.$router.push({path:'/aboutpage'})
-      }else if(index ==2){
-        this.$router.push({path:'/hobby'})
       }else{
-        this.$router.push({path:'/contact'})
+        this.$router.push({name})
       }
     }
   },

@@ -3,20 +3,20 @@ import VueRouter from "vue-router";
 Vue.use(VueRouter)
 
 export default new VueRouter({
-    routes:[
+    routes: [
         {
-            path:'/',component:()=>import('./components/main'),
-            children:[
-                {path:'/',component:()=>import('./components/aboutme')},
-                {path:'/pageone',component:()=>import('./components/pageone')},
-                {path:'/aboutpage',component:()=>import('./components/aboutpage')},
-                {path:'/hobby',component:()=>import('./components/hobby')},
-                {path:'/contact',component:()=>import('./components/contact')}
+            path: '/', component: () => import('./components/main'),
+            children: [
+                { path: '/', component: () => import('./components/aboutme'), name: 'aboutme' },
+                { path: '/pageone', component: () => import('./components/pageone'), name: 'pageone'},
+                { path: '/aboutpage', component: () => import('./components/aboutpage'), name: 'aboutpage' },
+                { path: '/hobby', component: () => import('./components/hobby'), name: 'hobby' },
+                { path: '/contact', component: () => import('./components/contact'), name: 'contact' }
             ]
         },
         {
-            path:'/test',
-            component:()=>import('./components/mytab')
+            path: '/test',
+            component: () => import('./components/mytab')
         }
     ]
 })
