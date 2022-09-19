@@ -4,9 +4,9 @@
   </div>
 </template>
 <script>
-// import './js/click-hw'
+import './js/click-hw'
 import "./js/click";
-import "./js/animation";
+// import "./js/animation";
 export default {};
 </script>
 <style lang='less' scoped>
