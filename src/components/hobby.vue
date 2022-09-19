@@ -1,33 +1,65 @@
 <template>
-  <!-- 爱好 -->
-  <div class="swiper">
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide" v-for="item in list">
-          <img :src="item.imgs" :alt="item.title" />
+  <div>
+    <!-- 爱好 -->
+    <div class="swiper">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" v-for="item in list">
+            <img :src="item.imgs" :alt="item.title" />
+          </div>
         </div>
+        <!-- 控件 -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="swiper-button-next swiper-button-white"></div>
       </div>
-      <!-- 控件 -->
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-prev swiper-button-white"></div>
-      <div class="swiper-button-next swiper-button-white"></div>
     </div>
-    <el-button style="margin-top:20px" @click="show3 = !show3">music</el-button>
 
-    <div style="margin: 20px 0 0 20px;">
+  <!-- 音乐 -->
+    
+    <div class="musicBtn">
+      <el-button @click="show3 = !show3"
+      >music</el-button
+    >
       <el-collapse-transition>
-        <div v-show="show3">
+        <div v-show="show3" class="grid">
+          <!-- 留什么给你 -->
           <div class="transition-box">
-            <audio class="adio" controls>
-              <source src="../audio/lsmgn.mp3" type="audio/mpeg">
-            </audio>
-            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" src="//music.163.com/outchain/player?type=2&id=145455&auto=1&height=66"></iframe>
+            <iframe
+              frameborder="no"
+              border="0"
+              marginwidth="0"
+              marginheight="0"
+              src="//music.163.com/outchain/player?type=2&id=145455&auto=1&height=66"
+            ></iframe>
+          </div>
+          <!-- 好想好想 -->
+          <div class="transition-box">
+            <iframe
+              frameborder="no"
+              border="0"
+              marginwidth="0"
+              marginheight="0"
+              src="//music.163.com/outchain/player?type=2&id=87111&auto=1&height=66"
+            ></iframe>
           </div>
           <div class="transition-box">
-            <audio controls>
-              <source src="../audio/haoxiang.mp3" type="audio/mpeg">
-            </audio>
-            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" src="//music.163.com/outchain/player?type=2&id=87111&auto=1&height=66"></iframe>
+            <iframe
+              frameborder="no"
+              border="0"
+              marginwidth="0"
+              marginheight="0"
+              src="//music.163.com/outchain/player?type=2&id=87111&auto=1&height=66"
+            ></iframe>
+          </div>
+          <div class="transition-box">
+            <iframe
+              frameborder="no"
+              border="0"
+              marginwidth="0"
+              marginheight="0"
+              src="//music.163.com/outchain/player?type=2&id=87111&auto=1&height=66"
+            ></iframe>
           </div>
         </div>
       </el-collapse-transition>
@@ -51,7 +83,7 @@ export default {
         { imgs: require("../img/my2.jpg") },
         { imgs: require("../img/my3.jpg") },
       ],
-      show3: true
+      show3: true,
     };
   },
   mounted() {
@@ -89,20 +121,26 @@ export default {
 .swiper-slide img {
   width: 100%;
 }
+.musicBtn{
+  display: flex;
+  flex-direction: column;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 20vw);
+  gap: 10px;
+  // margin-top: 20px
+}
 .transition-box {
-    margin-bottom: 10px;
-    width: 35vw;
-    height: 9vw;
-    border-radius: 4px;
-    text-align: center;
-    color: #fff;
-    box-sizing: border-box;
-    margin-right: 20px;
-    audio{
-      display: none;
-    }
-  }
-  
+  margin-bottom: 10px;
+  // width: 35vw;
+  height: 6vw;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  box-sizing: border-box;
+}
+
 @media screen and (max-width: 500px) {
   .swiper-pagination,
   .swiper-button-prev,
@@ -110,14 +148,17 @@ export default {
     display: none;
   }
   .swiper-container {
-  width: 40.25vw;
-  height: 60.8333vw;
-  border-radius: 0.5208vw;
-  margin-top: 1.5625vw;
-}
-.transition-box {
-    width: 50vw;
-    /* height: 10.2083vw; */
+    width: 40.25vw;
+    height: 60.8333vw;
+    border-radius: 0.5208vw;
+    margin-top: 1.5625vw;
+  }
+  .grid {
+    display: block;
+    margin-top: 10.0417vw;
+  }
+  .transition-box {
+    height: 16vw;
     background: transparent;
     border-radius: 4px;
     display: flex;
@@ -126,14 +167,7 @@ export default {
     align-items: center;
     color: #fff;
     box-sizing: border-box;
-    audio{
-    display: block;
-      width: 100%;
-    }
   }
-  
-  iframe{
-    display: none;
-  }
+
 }
 </style>

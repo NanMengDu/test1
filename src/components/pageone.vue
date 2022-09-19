@@ -198,9 +198,9 @@ export default {
   width: 100%;
   padding: .5208vw;
   display: grid;
-  grid-template-columns: repeat(3, 16vw);
-  grid-template-rows: repeat(5, 26vw);
-  gap: 10px;
+  grid-template-columns: repeat(4, 16vw);
+  grid-template-rows: repeat(4, 26vw);
+  gap: 30px 10px;
   place-items: center;
   .el-card {
     max-width: 16vw;

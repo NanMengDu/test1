@@ -1,5 +1,5 @@
 <template>
-<!-- 联系页面 -->
+  <!-- 联系页面 -->
   <div class="contact">
     <h3>联系我吧Contact me</h3>
     <div>
@@ -14,7 +14,7 @@
     </div>
     <div>
       <i class="t-icon t-icon-wodeyouxiang"></i>
-      <div> QQ </div>
+      <div>QQ</div>
       <div>2464016555</div>
     </div>
     <div>
@@ -32,7 +32,7 @@
   place-items: center;
   h3 {
     font-size: 1.7708vw;
-    background-image: linear-gradient(135deg, blue, purple,blue);
+    background-image: linear-gradient(135deg, blue, purple, blue);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -49,25 +49,33 @@
   background: #fdfafa;
   box-shadow: 20px 20px 60px#eedddd, -20px -20px 60px #ffffff;
   color: rgb(247, 0, 255);
-  div{
-    font-size: .8333vw;
+  div {
+    font-size: 0.8333vw;
   }
 }
-@media screen and (max-width:500px){
+@media screen and (max-width: 500px) {
+  .contact {
+    display: grid;
+    grid-template-columns: repeat(2, 22vw);
+    gap: 30px;
+    h3{
+      font-size: 5vw;
+    }
+  }
   .contact > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 20.4167vw;
-  height: 19.8125vw;
-  border-radius: 2.6042vw;
-  background: #fdfafa;
-  box-shadow: 20px 20px 60px#eedddd, -20px -20px 60px #ffffff;
-  color: rgb(247, 0, 255);
-  div{
-    font-size: .8333vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 28vw;
+    height: 19.8125vw;
+    border-radius: 2.6042vw;
+    background: #fdfafa;
+    box-shadow: 20px 20px 60px#eedddd, -20px -20px 60px #ffffff;
+    color: rgb(247, 0, 255);
+    div {
+      font-size: 4vw;
+    }
   }
-}
 }
 </style>
