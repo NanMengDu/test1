@@ -15,12 +15,10 @@
       </div>
     </div>
 
-  <!-- 音乐 -->
-    
+    <!-- 音乐 -->
+
     <div class="musicBtn">
-      <el-button @click="show3 = !show3"
-      >music</el-button
-    >
+      <el-button @click="show3 = !show3">music</el-button>
       <el-collapse-transition>
         <div v-show="show3" class="grid">
           <!-- 留什么给你 -->
@@ -33,6 +31,18 @@
               src="//music.163.com/outchain/player?type=2&id=145455&auto=1&height=66"
             ></iframe>
           </div>
+          <!-- 浪花一朵朵 -->
+          <div class="transition-box">
+            <iframe
+              frameborder="no"
+              border="0"
+              marginwidth="0"
+              marginheight="0"
+              width=""
+              height=""
+              src="//music.163.com/outchain/player?type=2&id=144234&auto=1&height=66"
+            ></iframe>
+          </div>
           <!-- 好想好想 -->
           <div class="transition-box">
             <iframe
@@ -43,22 +53,16 @@
               src="//music.163.com/outchain/player?type=2&id=87111&auto=1&height=66"
             ></iframe>
           </div>
+          <!-- 1990 -->
           <div class="transition-box">
             <iframe
               frameborder="no"
               border="0"
               marginwidth="0"
               marginheight="0"
-              src="//music.163.com/outchain/player?type=2&id=87111&auto=1&height=66"
-            ></iframe>
-          </div>
-          <div class="transition-box">
-            <iframe
-              frameborder="no"
-              border="0"
-              marginwidth="0"
-              marginheight="0"
-              src="//music.163.com/outchain/player?type=2&id=87111&auto=1&height=66"
+              width=""
+              height=""
+              src="//music.163.com/outchain/player?type=2&id=109198&auto=1&height=66"
             ></iframe>
           </div>
         </div>
@@ -121,7 +125,7 @@ export default {
 .swiper-slide img {
   width: 100%;
 }
-.musicBtn{
+.musicBtn {
   display: flex;
   flex-direction: column;
 }
@@ -168,6 +172,5 @@ export default {
     color: #fff;
     box-sizing: border-box;
   }
-
 }
 </style>
