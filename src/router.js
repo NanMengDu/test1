@@ -13,10 +13,6 @@ export default new VueRouter({
                 { path: '/hobby', component: () => import('./components/hobby'), name: 'hobby' },
                 { path: '/contact', component: () => import('./components/contact'), name: 'contact' }
             ]
-        },
-        {
-            path: '/test',
-            component: () => import('./components/mytab')
         }
     ]
 })

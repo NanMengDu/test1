@@ -1,5 +1,5 @@
 <template>
-  <!-- 联系页面 -->
+  <!-- 商务联系页面 -->
   <div class="contact">
     <h3>联系我吧Contact me</h3>
     <div>

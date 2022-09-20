@@ -1,5 +1,5 @@
 <template>
-  <!-- 关于页面 -->
+  <!-- 关于我页面 -->
   <div class="box1">
     <div class="item">
       <el-descriptions
