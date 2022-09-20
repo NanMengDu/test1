@@ -78,14 +78,17 @@
   margin-bottom: 10px;
 }
 ::v-deep .my-label {
-  color: #fff;
-  background-color: rgb(81, 130, 187);
+  color: rgb(15, 15, 244);
+  background-color: #d3f6fe;
+  font-weight: 700 !important;
   font-size: 18px;
   font-family: "Courier New", Courier, monospace;
+  border: .1px solid #ccc!important;
 }
 
 ::v-deep .my-content {
-  background: #ebeef5;
+  border: .1px solid #ccc !important;
+  background: #d3f6fe;
   color: #2d82ff;
 }
 ::v-deep

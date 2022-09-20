@@ -7,6 +7,8 @@ import router from "./router";
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 Vue.use(ElementUI)
+import VueParticles from 'vue-particles'
+Vue.use(VueParticles)
 
 
 // 去掉生产环境
