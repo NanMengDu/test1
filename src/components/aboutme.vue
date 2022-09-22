@@ -3,6 +3,7 @@
   <div class="aboutme">
     <img :src="url" />
     <div class="Quotations">
+      <p @click="$router.push({path:'/earth'})">点击有惊喜</p>
       <p>多数人在人潮汹涌的世间，白白挤了一生，从来不知</p>
       <p>道哪里才是他所想要到达的地方，而有目标的人却始</p>
       <p>终不忘记自我的方向，所以他能打开出路，走向成功。</p>
@@ -56,6 +57,16 @@ export default {
   color: transparent;
   p {
     flex: 1;
+  }
+  p:nth-child(1) {
+    border: 1px solid red;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  p:nth-child(1):hover{
+    color: blue;
   }
 }
 @media screen and (max-width: 500px) {

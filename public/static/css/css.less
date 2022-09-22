@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// 声明图标字体
+@font-face {
+    font-family: electronicFont;
+    src: url(../font/DS-DIGIT.TTF);
+}
+
+body {
+    background: url(../images/bg.jpg) no-repeat top center;
+    // background-size: cover;
+}
+
+header {
+    background: url(../images/head_bg.png) no-repeat;
+    background-size: 100% 100%; //拉伸背景图像完全覆盖内容面积(背景图，在容器内显示)
+    height: 1.25rem;
+    position: relative;
+    min-width: 1024px;
+    max-width: 1920px;
+    margin: 0 auto;
+
+    h1 {
+        color: white;
+        font-size: .475rem;
+        text-align: center;
+        line-height: 1rem;
+    }
+
+    .showTime {
+        position: absolute;
+        top: 0;
+        right: .375rem;
+        line-height: .9375rem;
+        color: rgba(255, 255, 255, .7);
+        font-size: .25rem;
+    }
+}
+
+.main {
+    min-width: 1024px;
+    max-width: 1920px;
+    padding: 0.125rem 0.125rem 0;
+    display: flex;
+    margin: 0 auto;
+
+    .column {
+        flex: 3;
+        // border: 1px solid red;
+    }
+
+    .column:nth-child(2) {
+        flex: 5;
+        overflow: hidden;
+        margin: 0 0.125rem 0.1875rem;
+    }
+
+    .panel {
+        height: 3.875rem;
+        border: 1px solid rgba(25, 186, 139, .17);
+        background: url(../images/line\(1\).png);
+        padding: 0 .1875rem .5rem;
+        margin-bottom: .1875rem;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0.125rem;
+            height: 0.125rem;
+            border-top: .025rem solid #02a6b5;
+            border-left: .025rem solid #02a6b5;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0.125rem;
+            height: 0.125rem;
+            border-top: .025rem solid #02a6b5;
+            border-right: .025rem solid #02a6b5;
+        }
+
+        .planel-footer {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0.125rem;
+                height: 0.125rem;
+                border-bottom: .025rem solid #02a6b5;
+                border-left: .025rem solid #02a6b5;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 0.125rem;
+                height: 0.125rem;
+                border-bottom: .025rem solid #02a6b5;
+                border-right: .025rem solid #02a6b5;
+            }
+        }
+
+        h2 {
+            height: .6rem;
+            color: #fff;
+            font-size: .25rem;
+            line-height: .6rem;
+            text-align: center;
+            font-weight: 400;
+        }
+
+        .chart {
+            height: 3rem;
+        }
+    }
+}
+
+.no {
+    background-color: rgba(101, 132, 226, .1);
+    padding: .1875rem;
+
+    .no-hd {
+        border: .0125rem solid rgba(25, 186, 139, 0.17);
+        position: relative;
+
+        ul {
+            display: flex;
+            list-style: none;
+        }
+
+        li {
+            height: 1rem;
+            font-size: .875rem;
+            color: #ffeb7b;
+            flex: 1;
+            text-align: center;
+            font-family: electronicFont;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 1px;
+                background-color: rgba(255, 255, 255, 0.2);
+                top: 25%;
+                right: 0;
+                height: 50%;
+            }
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: .375rem;
+            height: .125rem;
+            border-top: 2px solid #02a6b5;
+            border-left: 2px solid #02a6b5;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: .375rem;
+            height: .125rem;
+            border-bottom: 2px solid #02a6b5;
+            border-right: 2px solid #02a6b5;
+        }
+    }
+
+    .no-bd {
+        ul {
+            display: flex;
+            list-style: none;
+
+            li {
+                flex: 1;
+                text-align: center;
+                height: .5rem;
+                color: rgba(255, 255, 255, 0.7);
+                font-size: .225rem;
+                padding-top: .125rem;
+            }
+        }
+    }
+}
+
+.map {
+    height: 10.125rem;
+    position: relative;
+
+    .map1 {
+        background: url(../images/map.png) no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 6.475rem;
+        height: 6.475rem;
+        opacity: .3;
+    }
+
+    .map2 {
+        width: 8.0375rem;
+        height: 8.0375rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: url(../images/lbx.png) no-repeat;
+        background-size: cover;
+        opacity: .6;
+        animation: rotate1 15s linear infinite;
+    }
+
+    .map3 {
+        width: 7.075rem;
+        height: 7.075rem;
+        background: url(../images/jt.png);
+        background-size: cover;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: rotate2 15s linear infinite;
+    }
+
+    // 中间区域
+    .chart {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 10.125rem;
+    }
+
+    @keyframes rotate1 {
+        form {
+            transform: translate(-50%, -50%) rotate(0deg);
+
+        }
+
+        to {
+            transform: translate(-50%, -50%) rotate(360deg);
+        }
+    }
+
+    @keyframes rotate2 {
+        form {
+            transform: translate(-50%, -50%) rotate(0deg);
+
+        }
+
+        to {
+            transform: translate(-50%, -50%) rotate(-360deg);
+        }
+    }
+}
+
+/* 约束屏幕尺寸 */
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 42px !important;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    html {
+        font-size: 80px !important;
+    }
+}

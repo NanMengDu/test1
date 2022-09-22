@@ -13,6 +13,9 @@ export default new VueRouter({
                 { path: '/hobby', component: () => import('./components/hobby'), name: 'hobby' },
                 { path: '/contact', component: () => import('./components/contact'), name: 'contact' }
             ]
-        }
+        },
+        {
+            path:'/earth',component:()=>import('./components/newPage/index')
+        },
     ]
 })

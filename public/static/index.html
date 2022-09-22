@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大屏可視化demo</title>
+    <link rel="stylesheet" href="/static/css/css.css">
+</head>
+
+<body>
+    <header>
+        <h1>大屏数据可视化</h1>
+        <div class="showTime"></div>
+    </header>
+    <div class="main">
+        <div class="column">
+            <div class="panel bar">
+                <h2>柱形图</h2>
+                <div class="chart"></div>
+                <div class="planel-footer"></div>
+            </div>
+            <div class="panel line">
+                <h2>折线图</h2>
+                <div class="chart"></div>
+                <div class="planel-footer"></div>
+            </div>
+            <div class="panel pie">
+                <h2>饼形图</h2>
+                <div class="chart"></div>
+                <div class="planel-footer"></div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="no">
+                <div class="no-hd">
+                    <ul>
+                        <li>14300</li>
+                        <li>24300</li>
+                    </ul>
+                </div>
+                <div class="no-bd">
+                    <ul>
+                        <li>前端需求</li>
+                        <li>市场人数</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="map">
+                <div class="map1"></div>
+                <div class="map2"></div>
+                <div class="map3"></div>
+                <div class="chart"></div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="panel bar2">
+                <h2>柱形图</h2>
+                <div class="chart"></div>
+                <div class="planel-footer"></div>
+            </div>
+            <div class="panel line2">
+                <h2>折线图</h2>
+                <div class="chart"></div>
+                <div class="planel-footer"></div>
+            </div>
+            <div class="panel pie2">
+                <h2>饼形图</h2>
+                <div class="chart"></div>
+                <div class="planel-footer"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 文件順序需要注意 -->
+    <script src="/static/js/flexible.js"></script>
+    <script src="/static/js/echarts.min.js"></script>
+    <script src="/static/js/china.js"></script>
+    <script src="/static/js/index.js"></script>
+    <script>
+        var t = null
+        t = setTimeout(time, 1000)
+        function time() {
+            clearTimeout(t)
+            date = new Date()
+            var y = date.getFullYear();  // 获取完整的年份(4位,1970)
+            var mt = date.getMonth() + 1;  // 获取月份(0-11,0代表1月,用的时候记得加上1)
+            var day = date.getDate();  // 获取日(1-31)
+            // date.getTime();  // 获取时间(从1970.1.1开始的毫秒数)
+            var h = date.getHours();  // 获取小时数(0-23)
+            var m = date.getMinutes();  // 获取分钟数(0-59)
+            var s = date.getSeconds();  // 获取秒数(0-59)
+            document.querySelector('.showTime').innerHTML = `当前时间:${y}年${mt}月${day}日${h}时${m}分${s}秒`
+            t = setTimeout(time, 1000)
+        }
+
+    </script>
+</body>
+
+</html>
