@@ -171,5 +171,20 @@ export default {
   color: blue;
   cursor: pointer;
 }
+.name {
+  margin-top: -2px;
+  font-size: 2vw;
+  white-space: nowrap;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.hov{
+  img {
+    width: 9vw;
+    height: 9vw;
+    cursor: pointer;
+  }
+}
 }
 </style>
