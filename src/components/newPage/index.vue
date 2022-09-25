@@ -1,7 +1,9 @@
 <template>
   <div>
-    <el-button class="btn" @click.native="$router.push({name:'aboutme'})" type="primary" plain>点击返回主场景</el-button>
-    <el-button @click.native="myswitch" type="primary" plain>点击切换场景</el-button>
+    <button class="goBack" @click="$router.push({ name: 'aboutme' })">
+      返回主场景
+    </button>
+    <button class="btn" @click="myswitch" type="primary" plain>切换场景</button>
     <earth v-show="flag"></earth>
     <visualization v-show="!flag"></visualization>
   </div>
@@ -16,27 +18,38 @@ export default {
       flag: true,
     };
   },
-  methods:{
-    myswitch(){
-        console.log(222);
-        this.flag = !this.flag
-    }
-  }
+  methods: {
+    myswitch() {
+      console.log(222);
+      this.flag = !this.flag;
+    },
+  },
 };
 </script>
 <style lang="less" scoped>
-.el-button{
-    position: absolute;
-    pointer-events: auto;
-    cursor: pointer;
-    right: 10px;
-    top: 45px;
+.btn {
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  cursor: pointer;
+  font-size: 1.0417vw;
+  color: rgb(231, 247, 4);
+  border-radius: 20px 0 20px 0;
+  background: rgba(25, 25, 224, 0.1);
+  right: 20px;
+  top: 45px;
 }
-.btn{
-   position: absolute;
-    pointer-events: auto;
-    cursor: pointer;
-    left: 10px;
-    top: 45px;
+.goBack {
+  width: 140px;
+  height: 40px;
+  position: absolute;
+  cursor: pointer;
+  font-size: 1.0417vw;
+  color: rgb(231, 247, 4);
+  border-radius: 20px 0 20px 0;
+  background: rgba(8, 8, 237);
+  left: 50%;
+  margin-left: -70px;
+  bottom: 40px;
 }
 </style>

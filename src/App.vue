@@ -25,7 +25,7 @@
 </template>
 <script>
 // import './js/click-hw'
-import "./js/click";
+// import "./js/click";
 // import "./js/animation";
 export default {};
 </script>

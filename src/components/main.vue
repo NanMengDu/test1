@@ -51,7 +51,7 @@ export default {
       list: [
         {
           icon: "t-icon t-icon-zhuanyejineng--",
-          title: "娱乐圈",
+          title: "随机音乐库",
           name: "pageone",
         },
         { icon: "t-icon t-icon-guanyu", title: "关于我", name: "aboutpage" },

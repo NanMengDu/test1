@@ -3,7 +3,7 @@
   <div class="aboutme">
     <img :src="url" />
     <div class="Quotations">
-      <p @click="$router.push({path:'/earth'})">点击有惊喜</p>
+      <p @click="$router.push({path:'/earth'})">点击跳转</p>
       <p>多数人在人潮汹涌的世间，白白挤了一生，从来不知</p>
       <p>道哪里才是他所想要到达的地方，而有目标的人却始</p>
       <p>终不忘记自我的方向，所以他能打开出路，走向成功。</p>
@@ -59,13 +59,17 @@ export default {
     flex: 1;
   }
   p:nth-child(1) {
-    border: 1px solid red;
-    border-radius: 8px;
+    border: 1px solid rgb(10, 229, 94);
+    box-shadow: 0 0 4px rgb(106, 255, 0);
+    padding: 0 5px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     cursor: pointer;
+    transition: all .1s;
   }
   p:nth-child(1):hover{
+    transition: all .1s;
     color: blue;
   }
 }
@@ -86,6 +90,9 @@ export default {
   }
   .Quotations {
     font-size: 3.5vw;
+    p:nth-child(1){
+      display: none;
+    }
   }
 }
 </style>
