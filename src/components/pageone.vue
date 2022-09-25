@@ -173,7 +173,7 @@ export default {
 }
 .name {
   margin-top: -2px;
-  font-size: 2vw;
+  font-size: 4vw;
   white-space: nowrap;
   overflow: hidden;
   white-space: nowrap;
